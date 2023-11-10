@@ -4,20 +4,17 @@
     <title>Order Via WhatsApp</title>
 </head>
 <body>
-    <form action="https://wa.me/6289651722787?text=" method="get">
-        <label for="name">Nama Anda:</label>
-        <input type="text" id="name" name="text" required>
-        <br>
-        <label for="message">Menu Pesanan:</label>
-        <textarea id="message" name="text" required></textarea>
-        <br>
-        <label for="jml">Jumlah:</label>
-        <input type="text" id="jml" name="text" required>
-        <br>
-        <input type="submit" value="Kirim Pesan WhatsApp">
-        <br>
-    <a href="index.html">Tutup</a>
-    </form>
+<h2>Form Pemesanan Makanan</h2>
+<form action="https://api.whatsapp.com/send" method="get">
+  <label for="nama">Nama:</label><br>
+  <input type="text" id="nama" name="text"><br>
+  <label for="menu">Menu :</label><br>
+  <input type="text" id="menu" name="text"><br><br>
+  <input type="hidden" id="phone" name="phone" value="6289651722787">
+  <input type="submit" value="Pesan Sekarang">
+  <a href="index.html">Tutup</a>
+</form> 
+    
 </body>
 </html>
 
